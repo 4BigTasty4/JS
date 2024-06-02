@@ -1,0 +1,372 @@
+@keyframes fadeInBlur {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: #f2f2f2;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-content {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.center-text {
+  animation: fadeInBlur 5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background 2s ease-in-out;
+}
+
+body.bg1 {
+  background-image: url("img/porsche-911-gt3-porsche-911-side-view-car-sky.jpg");
+}
+
+body.bg2 {
+  background-image: url("img/Porsche_GT3_911_White_583078_6000x4000.jpg");
+}
+
+body.bg3 {
+  background-image: url("img/S20_1172_fine.jpg");
+}
+
+body.bg4 {
+  background-image: url("img/theon-design-porsche-911-porsche-911964-69.jpg");
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  box-shadow: 0 5px 10px #000;
+  height: 55px;
+}
+
+header .Logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000;
+  transition: 0.5s;
+}
+
+header .Logo img {
+  height: 35px;
+  transition: 0.5s;
+}
+
+header .Logo:hover {
+  transform: scale(1.2);
+}
+
+header nav ul li {
+  position: relative;
+  float: left;
+}
+
+header nav ul li a {
+  padding: 15px;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.8s, transform 0.8s;
+}
+
+header nav ul li a:hover {
+  transform: scale(1.15);
+  color: #3498db;
+}
+
+header nav ul li a:active {
+  transform: scale(0.98);
+}
+
+header nav ul li a:active::before {
+  transform: translate(-50%, -50%) scale(1);
+  transition: none;
+}
+
+header nav ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: calc(100vh - 60px);
+  margin-left: 50px;
+}
+
+.content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 30px;
+  width: 700px;
+  margin-bottom: 200px;
+  font-size: 17px;
+}
+
+.content-vid {
+  height: 140px;
+  text-align: center;
+  padding: 0;
+  border-radius: 30px;
+  width: 700px;
+  margin-bottom: 100px;
+  font-size: 18px;
+}
+
+.content-vid2 {
+  height: 140px;
+  text-align: center;
+  padding: 0;
+  border-radius: 30px;
+  width: 700px;
+  margin-bottom: 300px;
+  font-size: 18px;
+}
+
+.content-vid3 {
+  height: 140px;
+  text-align: center;
+  padding: 0;
+  border-radius: 30px;
+  width: 700px;
+  margin-bottom: 500px;
+  font-size: 18px;
+}
+
+.content-vid4 {
+  height: 140px;
+  text-align: center;
+  padding: 0;
+  border-radius: 30px;
+  width: 700px;
+  margin-bottom: 700px;
+  font-size: 18px;
+}
+
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 180px;
+  background: #fff;
+  display: none;
+}
+
+nav ul li ul li {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul li ul li ul {
+  left: 180px;
+  top: 0;
+}
+
+nav ul li:hover > ul {
+  display: initial;
+}
+
+.LogoSize {
+  height: 40px;
+  padding: 5px;
+}
+
+.size {
+  font-size: 20px;
+}
+
+.footer {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 3%;
+  box-shadow: 0 5px 10px #000;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  block-size: auto;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content img {
+  height: 55px;
+  width: auto;
+  padding: 5px;
+}
+
+.tab-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  margin-right: -10px;
+}
+
+.tab-container2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  margin-right: -10px;
+}
+
+.tab-container3 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  margin-right: -10px;
+}
+
+.tab-container4 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  margin-right: -10px;
+}
+
+.tab-container .content-vid {
+  background-color: rgba(119, 124, 129, 0.7);
+  color: #fff;
+  padding: 9px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.tab-container2 .content-vid2 {
+  background-color: rgba(119, 124, 129, 0.7);
+  color: #fff;
+  padding: 9px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.tab-container3 .content-vid3 {
+  background-color: rgba(119, 124, 129, 0.7);
+  color: #fff;
+  padding: 9px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.tab-container4 .content-vid4 {
+  background-color: rgba(119, 124, 129, 0.7);
+  color: #fff;
+  padding: 9px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.tab-container .content-vid p {
+  overflow: hidden;
+}
+
+.tab-container2 .content-vid2 p {
+  overflow: hidden;
+}
+
+.tab-container4 .content-vid4 p {
+  overflow: hidden;
+}
+
+.tab-container4 .content-vid4 p {
+  overflow: hidden;
+}
+
+.tab-container .tab:hover + .content-vid,
+.tab-container .content-vid:hover {
+  width: 350px;
+}
+
+.tab-container2 .tab:hover + .content-vid2,
+.tab-container2 .content-vid2:hover {
+  width: 350px;
+}
+
+.tab-container3 .tab:hover + .content-vid3,
+.tab-container3 .content-vid3:hover {
+  width: 350px;
+}
+
+.tab-container4 .tab:hover + .content-vid4,
+.tab-container4 .content-vid4:hover {
+  width: 350px;
+}
